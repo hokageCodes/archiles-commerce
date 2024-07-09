@@ -1,0 +1,88 @@
+/* Base Styles */
+.statistics-section {
+    padding: 3rem 0;
+    background-color: #ffffff;
+  }
+  
+  .statistics-container {
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .stat-slide {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: -0.0032em;
+  }
+  
+  .stat-text {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.07px;
+    letter-spacing: -0.0032em;
+    color: #999c99;
+  }
+  
+  /* Flex layout for desktop */
+  .statistics-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .stat-number {
+      font-size: 48px;
+      line-height: 52px;
+    }
+  
+    .stat-text {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+  
+  @media (max-width: 415px) {
+    .stat-number {
+      font-size: 40px;
+      line-height: 44px;
+    }
+  
+    .stat-text {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  
+  @media (max-width: 413px) {
+    .stat-number {
+      font-size: 40px;
+      line-height: 44px;
+    }
+  
+    .stat-text {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .stat-number {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  
+    .stat-text {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+  

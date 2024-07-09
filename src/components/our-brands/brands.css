@@ -1,0 +1,55 @@
+.brands-section {
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .brands-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .brands-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .brands-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+  }
+  
+  .brand-circle {
+    padding: 32px 18px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #EDF4EA;
+    box-shadow: 0px 1px 2px 1px #00000040;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+  }
+  
+  .brand-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .brands-title {
+      font-size: 1.5rem;
+    }
+  
+    .brands-grid {
+      gap: 24px;
+    }
+  
+    .brand-circle {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
