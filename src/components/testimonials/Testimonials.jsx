@@ -40,47 +40,43 @@ const TestimonialsSection = () => {
   return (
     <div className="testimonials-section">
       <div className="testimonials-container">
-        {isMobile ? (
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={10}
-            slidesPerView={1}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-          >
-            {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
-                <div className="testimonial-slide">
-                  <h2 className="testimonials-title">What Our Customers Say</h2>
-                  <img src="/assets/svgs/quote.svg" className="quote-icon" alt="quote"/>
-                  <blockquote className="testimonial-text">
-                    “{testimonial.text}”
-                  </blockquote>
-                  <p className="testimonial-author">- {testimonial.author}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        ) : (
-          <div className="testimonials-content">
-            <div className="testimonials-title-container">
-              <h2 className="testimonials-title">What Our Customers Say</h2>
-            </div>
+        <div className="testimonials-title">
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div className="testimonials-content">
+          {isMobile ? (
+            <Swiper
+              modules={[Autoplay]}
+              spaceBetween={10}
+              slidesPerView={1}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+            >
+              {testimonials.map((testimonial) => (
+                <SwiperSlide key={testimonial.id}>
+                  <div className="testimonial">
+                    <img src="/assets/svgs/quote.svg" className="quote" alt="quote" />
+                    <blockquote>“{testimonial.text}”</blockquote>
+                    <p className="author">- {testimonial.author}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          ) : (
             <div className="testimonials-grid">
               {testimonials.map((testimonial, index) => (
-                <div key={testimonial.id} className={`testimonial-card ${index !== testimonials.length - 1 ? 'card-divider' : ''}`}>
-                  <img src="/assets/svgs/quote.svg" className="quote-icon" alt="quote"/>
-                  <blockquote className="testimonial-text">
-                    {testimonial.text}
-                  </blockquote>
-                  <p className="testimonial-author">- {testimonial.author}</p>
+                <div key={testimonial.id} className="testimonial">
+                  <img src="/assets/svgs/quote.svg" className="quote" alt="quote" />
+                  <blockquote>{testimonial.text}</blockquote>
+                  <p className="author">- {testimonial.author}</p>
+                  {index < testimonials.length - 1 && <div className="divider"></div>}
                 </div>
               ))}
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );
