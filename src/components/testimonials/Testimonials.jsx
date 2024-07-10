@@ -55,7 +55,7 @@ const TestimonialsSection = () => {
               }}
             >
               {testimonials.map((testimonial) => (
-                <SwiperSlide key={testimonial.id}>
+                <SwiperSlide key={testimonial.id} className="swiper-slide">
                   <div className="testimonial">
                     <img src="/assets/svgs/quote.svg" className="quote" alt="quote" />
                     <blockquote>“{testimonial.text}”</blockquote>

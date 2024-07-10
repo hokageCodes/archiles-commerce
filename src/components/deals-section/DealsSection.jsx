@@ -1,4 +1,3 @@
-"use client";
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
@@ -35,25 +34,11 @@ const DealsSection = () => {
         {isMobile ? (
           <Swiper
             modules={[Autoplay]}
-            spaceBetween={10}
-            slidesPerView={'auto'}
+            spaceBetween={20}
+            slidesPerView={1}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
-            }}
-            breakpoints={{
-              375: {
-                slidesPerView: 1,
-              },
-              413: {
-                slidesPerView: 2,
-              },
-              415: {
-                slidesPerView: 2,
-              },
-              768: {
-                slidesPerView: 3,
-              },
             }}
           >
             {items.map((item) => (

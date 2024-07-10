@@ -1,3 +1,4 @@
+/* testimonials.css */
 .testimonials-section {
   padding: 50px 0;
   background-color: #fff;
@@ -5,9 +6,8 @@
 
 .testimonials-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -22,34 +22,37 @@
   font-family: 'Inter', sans-serif;
   font-size: 60px;
   font-weight: 700;
-  line-height: 72.61px;
+  line-height: 72px;
   letter-spacing: -0.0032em;
   color: #000;
 }
 
 .testimonials-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 
 .testimonials-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   background-color: rgba(57, 123, 60, 0.37);
-  width: 997px;
-  height: 288.69px;
   padding: 20px;
-  position: relative;
+  border-radius: 10px;
 }
 
 .testimonial {
   flex: 1;
   max-width: 288px;
-  height: 160.94px;
-  position: relative;
-  text-align: left;
   padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial:not(:last-child) {
+  margin-right: 20px;
 }
 
 .quote {
@@ -64,21 +67,19 @@ blockquote {
   font-style: italic;
   line-height: 1.5;
   margin-top: 20px;
+  color: #333;
 }
 
 .author {
   font-weight: bold;
   margin-top: 10px;
-  text-align: center;
+  color: #555;
 }
 
 .divider {
   width: 2px;
   height: 100%;
   background-color: #397B3C;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 @media (max-width: 768px) {
@@ -88,7 +89,12 @@ blockquote {
   }
 
   .testimonials-grid {
-    flex-direction: column;
+    display: none;
+  }
+
+  .swiper-container {
+    display: block;
+    width: 100%;
   }
 
   .testimonial {
@@ -107,12 +113,7 @@ blockquote {
     line-height: 36px;
   }
 
-  .testimonials-grid {
-    padding: 10px;
-  }
-
   .testimonial {
     padding: 10px;
   }
 }
-  
