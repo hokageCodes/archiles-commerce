@@ -8,6 +8,7 @@ const ProductPage = () => {
     '/assets/images/products/pp3.png',
     '/assets/images/products/pp4.png',
     '/assets/images/products/pp5.png',
+    '/assets/images/products/pp6.png',
   ];
 
   return (
@@ -49,8 +50,9 @@ const ProductPage = () => {
             $329.99
           </div>
           <p className="product-description">
-            The Air Jordan 6 Retro "Defining Moments" embodies a blend of elegance and boldness, making a striking visual statement with its iconic silhouette. Designed for both style and impact, this sneaker seamlessly merges classic elements with contemporary flair, appealing to both collectors and fashion enthusiasts.
+            The Air Jordan 6 Retro "Defining Moments" embodies a blend of elegance and boldness, making a striking visual statement with its iconic silhouette. 
           </p>
+          <p className="product-description">Designed for both style and impact, this sneaker seamlessly merges classic elements with contemporary flair, appealing to both collectors and fashion enthusiasts.</p>
           <button className="buy-now-button">Buy Now</button>
         </div>
       </div>
