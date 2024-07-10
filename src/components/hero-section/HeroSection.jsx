@@ -50,7 +50,7 @@ const SneakerSection = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              Explore
+              <a href="/product-listing">Explore</a>
             </motion.button>
           </motion.div>
         </>
@@ -72,7 +72,7 @@ const SneakerSection = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              Explore
+              <a href="/product-listing">Explore</a>
             </motion.button>
           </motion.div>
           <motion.div

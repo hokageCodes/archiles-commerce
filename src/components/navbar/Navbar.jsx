@@ -29,7 +29,9 @@ const Navbar = () => {
         </div>
         <div className="search-cart-user">
           <div className="cart">
-            <img src={CartIcon} alt="Cart" width={24} height={24} />
+            <a href="/product-listing">
+              <img src={CartIcon} alt="Cart" width={24} height={24} />
+            </a>
             <span>0</span>
           </div>
           <img src={UserIcon} alt="User" width={24} height={24} className="user-icon" />
