@@ -71,14 +71,14 @@
   .sneaker-image img {
     width: 100%;
     max-width: 100%;
-    height: auto;
-    margin-top: 0;
+    height: 500px;
+    margin-top: -70px;
   }
 
   .sneaker-text {
     width: 100%;
     height: auto;
-    margin-top: 12px;
+    margin-top: -120px;
   }
 
   .sneaker-text h1 {
@@ -108,14 +108,14 @@
   .sneaker-image img {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 255px;
     margin-top: 0;
   }
 
   .sneaker-text {
     width: 100%;
     height: auto;
-    margin-top: 12px;
+    margin-top: -50px;
   }
 
   .sneaker-text h1 {
@@ -151,14 +151,14 @@
   .sneaker-image img {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 270px;
     margin-top: 0;
   }
 
   .sneaker-text {
     width: 100%;
     height: auto;
-    margin-top: 12px;
+    margin-top: -10px;
   }
 
   .sneaker-text h1 {

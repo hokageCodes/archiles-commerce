@@ -41,7 +41,7 @@ const SneakerSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 data-aos="fade-up">All your favorite sneakers, in one place.</h1>
+            <h1>All your favorite sneakers, in one place.</h1>
             <p>
               Exclusively for sneakerheads of all ages, gender, and the rest of humanity.
             </p>
