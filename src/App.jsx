@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import LandingPage from './pages/LandingPage';
+import CheckoutPage from './pages/product-listing/ProductPage';
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<LandingPage />} />
+        <Route path='/product-listing' element={<CheckoutPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

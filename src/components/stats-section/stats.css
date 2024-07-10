@@ -50,7 +50,7 @@
     }
   }
   
-  @media (max-width: 415px) {
+  @media (max-width: 414px) {
     .stat-number {
       font-size: 40px;
       line-height: 44px;
@@ -62,7 +62,7 @@
     }
   }
   
-  @media (max-width: 413px) {
+  @media (max-width: 412px) {
     .stat-number {
       font-size: 40px;
       line-height: 44px;

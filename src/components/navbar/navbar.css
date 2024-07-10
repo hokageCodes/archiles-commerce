@@ -148,7 +148,7 @@ body {
   }
   
   /* Mobile Breakpoints */
-  @media (max-width: 415px) {
+  @media (max-width: 414px) {
     .menu {
       display: none;
     }
@@ -162,7 +162,7 @@ body {
     }
   }
   
-  @media (max-width: 413px) {
+  @media (max-width: 412px) {
     .menu {
       display: none;
     }
