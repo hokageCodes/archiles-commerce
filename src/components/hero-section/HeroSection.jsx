@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import AOS from 'aos';
@@ -29,8 +28,8 @@ const SneakerSection = () => {
         <>
           <motion.div
             className="sneaker-image"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <img src="./assets/images/hero-img.png" alt="Sneaker" />
@@ -40,6 +39,7 @@ const SneakerSection = () => {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            data-aos="fade-up"
           >
             <h1>All your favorite sneakers, in one place.</h1>
             <p>
@@ -61,8 +61,9 @@ const SneakerSection = () => {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            data-aos="fade-up"
           >
-            <h1 data-aos="fade-up">All your favorite sneakers, in one place.</h1>
+            <h1>All your favorite sneakers, in one place.</h1>
             <p>
               Exclusively for sneakerheads of all ages, gender, and the rest of humanity.
             </p>
@@ -76,8 +77,8 @@ const SneakerSection = () => {
           </motion.div>
           <motion.div
             className="sneaker-image"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <img src="./assets/images/hero-img.png" alt="Sneaker" />
