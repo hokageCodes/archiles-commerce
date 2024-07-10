@@ -61,18 +61,20 @@ const DealsSection = () => {
         ) : (
           <div className="deals-grid">
             {items.map((item) => (
-              <div key={item.id} className="deal-card">
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  className="deal-image"
-                />
-                <div className="deal-info">
-                  <div className="deal-title">{item.title}</div>
-                  <p className="deal-price">{item.price}</p>
-                  <button className="deal-button">Add to Cart</button>
+                <div key={item.id} className="deal-card">
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="deal-image"
+                  />
+                  <div className="deal-info">
+                    <div className="deal-title">{item.title}</div>
+                    <p className="deal-price">{item.price}</p>
+                    <button className="deal-button">
+                      <a href="/product-listing">Add to Cart</a>
+                    </button>
+                  </div>
                 </div>
-              </div>
             ))}
           </div>
         )}

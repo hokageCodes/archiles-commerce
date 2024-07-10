@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+
+  
+  .cart-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-actions input {
+    padding: 5px;
+    margin-right: 20px;
+  }
+  
+  .cart-icon,
+  .profile-icon {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+  
+  .cart-main {
+    padding: 20px 0;
+  }
+  
+  .cart-steps {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    padding: 10px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  .step.active {
+    background-color: #e0e0e0;
+    }
+    
+    .cart-content {
+      display: flex;
+      justify-content: space-between;
+      }
+      
+      .cart-table {
+        width: 65%;
+        border-collapse: collapse;
+        }
+        
+        .cart-table th,
+        .cart-table td {
+          padding: 15px;
+          border-bottom: 1px solid #e0e0e0;
+          }
+          
+          .cart-table img {
+          border: 1px solid red;
+          width: 60px;
+          margin-right: 10px;
+          }
+          
+          .cart-table button {
+            padding: 5px 10px;
+            }
+  
+  .delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .order-summary {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .order-item img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .grand-total {
+    font-weight: bold;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.table-data {
+  display: flex;
+  max-width: 500px;
+  }
+  .data-details {
+  border: 1px solid red;
+}

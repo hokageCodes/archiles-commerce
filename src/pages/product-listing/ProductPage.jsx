@@ -80,7 +80,7 @@ const ProductPage = () => {
 
           {isMobile && (
             <Swiper
-              spaceBetween={10}
+              spaceBetween={5} // Adjusted space between thumbnails
               slidesPerView={'auto'}
               className="thumbnail-swiper"
               autoplay
