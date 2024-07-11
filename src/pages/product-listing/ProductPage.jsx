@@ -98,7 +98,7 @@ const ProductPage = () => {
             </Swiper>
           )}
 
-          <button className="buy-now-button">Buy Now</button>
+          <button className="buy-now-button"><a href="/cart">Buy Now</a></button>
         </div>
       </div>
       {!isMobile && (

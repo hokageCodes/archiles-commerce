@@ -1,0 +1,185 @@
+/* CheckoutPage.css */
+
+.checkout-page {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .checkout-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 50px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .shipping-information {
+    flex: 2;
+    margin-right: 20px;
+  }
+  
+  .shipping-information h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .shipping-information form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .inline-fields {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .inline-fields label {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .inline-fields label:last-child {
+    margin-right: 0;
+  }
+  
+  .shipping-information form input,
+  .shipping-information form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .shipping-fees {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .shipping-fees h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .shipping-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .shipping-option input {
+    margin-right: 10px;
+  }
+  
+  .shipping-option label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .shipping-option label div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .shipping-option label span {
+    color: #555;
+  }
+  
+  .shipping-option:last-child {
+    margin-bottom: 0;
+  }
+  
+  .order-summary {
+    width: 425px;
+    height: 629px;
+    box-shadow: 0px 2px 6px 0px #00000040;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .order-summary h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .order-item img {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 2px 6px 0px #00000040;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  
+  .order-item div {
+    flex: 1;
+  }
+  
+  .order-item p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .order-totals {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .order-totals p {
+    margin: 0 0 10px;
+    font-size: 16px;
+  }
+  
+  .proceed-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .proceed-button:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 768px) {
+    .checkout-container {
+      flex-direction: column;
+    }
+  
+    .shipping-information {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .inline-fields {
+      flex-direction: column;
+    }
+  
+    .inline-fields label {
+      margin-right: 0;
+    }
+  }
+  

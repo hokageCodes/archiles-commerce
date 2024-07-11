@@ -44,6 +44,7 @@ body {
   
   .cart {
     position: relative;
+    margin-top: 5px;
   }
   
   .cart span {
@@ -132,6 +133,7 @@ body {
   
     .hamburger {
       display: block;
+      margin-top: 6px;
     }
   
     .navbar {
